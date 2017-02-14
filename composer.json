@@ -1,22 +1,15 @@
 {
-	"name":             "pattern-lab/styleguidekit-assets-default",
-	"description":      "The assets for the default StyleguideKit for Pattern Lab. Contains styles and mark-up for Pattern Lab's front-end.",
+	"name":             "ua-styleguide",
+	"description":      "The assets for the default Urban Airship's StyleguideKit for Pattern Lab. Contains styles and mark-up for Pattern Lab's front-end.",
 	"keywords":         ["mustache", "pattern lab", "styleguide"],
 	"homepage":         "http://patternlab.io",
 	"license":          "MIT",
 	"type":             "patternlab-styleguidekit",
 	"authors": [
 		{
-			"name":         "Dave Olsen",
-			"email":        "dmolsen@gmail.com",
-			"homepage":     "http://dmolsen.com",
-			"role":         "Lead Developer"
+			"name":         "Nicole Mors",
+			"homepage":     "https://github.com/nicolemors",
 		},
-		{
-			"name":         "Brad Frost",
-			"homepage":     "http://bradfrostweb.com",
-			"role":         "Creator"
-		}
 	],
 	"support": {
 		"issues":         "https://github.com/pattern-lab/styleguidekit-assets-default/issues",

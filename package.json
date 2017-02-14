@@ -1,17 +1,17 @@
 {
-  "name": "styleguidekit-assets-default",
+  "name": "ua-styleguide",
   "version": "3.4.0",
-  "description": "The default set of front-end assets for Pattern Lab.",
+  "description": "Forked pattern lab instance, customized for Urban Airship",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pattern-lab/styleguidekit-assets-default.git"
+    "url": "https://github.com/nicolemors/ua-styleguidekit"
   },
-  "author": "Dave Olsen",
+  "author": "Nicole Mors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pattern-lab/styleguidekit-assets-default/issues"
+    "url": "https://github.com/nicolemors/ua-styleguidekit"
   },
-  "homepage": "https://github.com/pattern-lab/styleguidekit-assets-default",
+  "homepage": "https://github.com/nicolemors/ua-styleguidekit",
   "devDependencies": {
     "del": "^1.1.1",
     "gulp": "^3.8.6",

@@ -1,9 +1,9 @@
 {
-  "name": "styleguidekit-assets-default",
+  "name": "ua-styleguide",
   "version": "0.1.0",
-  "homepage": "https://github.com/pattern-lab/styleguidekit-assets-default",
+  "homepage": "https://www.urbanairship.com/",
   "authors": [
-    "Dave Olsen <dmolsen@gmail.com>"
+    "Nicole Mors <nicolemors@gmail.com>"
   ],
   "license": "MIT",
   "private": true,
