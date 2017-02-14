@@ -1,9 +1,9 @@
 /*------------------------------------*\
-#PATTERN LAB STYLES
+#UA CUSTOM PATTERN LAB STYLES
 \*------------------------------------*/
 /**
 * NOTES:
-* 1) These styles are specific to Pattern Lab and should not be modified.
+* 1) These files are the custom styleguide files for UA's Pattern Lab
 * All project styles should be modified in /source/css/
 *
 * 2) Any !important declarations are to prevent brand styles from overriding
@@ -58,7 +58,7 @@
 */
 
 // Fonts
-$sg-font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$sg-font : 'Roboto', sans-serif;
 
 // Colors
 $sg-black : #000;
@@ -74,6 +74,23 @@ $sg-tint-2 : rgba(255,255,255,0.25);
 $sg-tone : rgba(0,0,0,0.1);
 $sg-tone-2 : rgba(0,0,0,0.3);
 
+// UA Colors
+$charcoal : #3d494c;
+$pacific : #00698f;
+$hefe : #ffc727;
+$honey-wheat : #eaaa00;
+$honey-wheat : #eaaa00;
+
+$charcoal-20 : #eceded;
+$charcoal-40 : #b2b7b8;
+$charcoal-60 : #8b9294;
+$charcoal-80 : #646e70;
+
+$pacific-20 : #cce1e9;
+$pacific-40 : #99c3d2;
+$pacific-60 : #66a5bc;
+$pacific-80 : #3387a5;
+
 // Typography
 $sg-font-size-sm : 70%;
 $sg-font-size-norm : 100%;
@@ -84,7 +101,7 @@ $sg-space : 1em;
 $sg-doublespace : $sg-space*2;
 $sg-pad : 1em;
 $sg-pad-half : $sg-pad/2;
-$offset-top : 2em;
+$offset-top : 4.813em;
 
 // Breakpoints
 $sg-bp-small : 24em;
@@ -152,7 +169,7 @@ $sg-border-radius-med : 6px;
 #patternlab-html, #patternlab-body {
     margin: 0;
     padding: 0;
-    background: $sg-gray-light-2;
+    background: $charcoal;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -175,7 +192,7 @@ $sg-border-radius-med : 6px;
     font-family: $sg-font;
     text-transform: uppercase;
     position: fixed;
-    top: 0;
+    top: $offset-top;
     left: 0;
     z-index: 4;
     width: 100%;
@@ -206,6 +223,23 @@ $sg-border-radius-med : 6px;
             background: $sg-gray-dark;
         }
     }
+}
+
+/**
+* Styles UA logo in pattern lab header
+*/
+
+.ua-logo {
+  background-color: $sg-black;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+@media all and (min-width: $sg-bp-med) {
+  .ua-logo {
+    margin-top: 0;
+    margin-bottom: -1em;
+  }
 }
 
 
@@ -268,7 +302,6 @@ $sg-border-radius-med : 6px;
 
             > ol {
                 position: absolute;
-                top: $offset-top;
                 left: 0;
             }
 
@@ -785,6 +818,7 @@ $sg-border-radius-med : 6px;
     -webkit-overflow-scrolling: touch;
     overflow-y: auto;
     overflow-x: hidden;
+    background-color: $sg-white;
 
     &.hay-mode {
         transition: all 40s linear;
@@ -1107,7 +1141,6 @@ $sg-border-radius-med : 6px;
 * 2) The category contains a title and optional description
 */
 .sg-pattern-category {
-    margin-top: 6rem;
     font: $sg-font !important;
 
     &:first-of-type {
@@ -1148,7 +1181,7 @@ $sg-border-radius-med : 6px;
    pre[class*=language-] {
      white-space: pre-wrap;
      @media all and (min-width: 42em) {
-       white-space: pre;		
+       white-space: pre;
      }
    }
  }

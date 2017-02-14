@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*------------------------------------*\
-#PATTERN LAB STYLES
+#UA CUSTOM PATTERN LAB STYLES
 \*------------------------------------*/
 /**
 * NOTES:
-* 1) These styles are specific to Pattern Lab and should not be modified.
+* 1) These files are the custom styleguide files for UA's Pattern Lab
 * All project styles should be modified in /source/css/
 *
 * 2) Any !important declarations are to prevent brand styles from overriding
@@ -90,7 +90,7 @@
 #patternlab-html, #patternlab-body {
   margin: 0;
   padding: 0;
-  background: #ddd;
+  background: #3d494c;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -105,10 +105,10 @@
 .sg-header {
   background: #000;
   color: #fff;
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   position: fixed;
-  top: 0;
+  top: 4.813em;
   left: 0;
   z-index: 4;
   width: 100%;
@@ -140,6 +140,26 @@
   background: #222;
 }
 
+/**
+* Styles UA logo in pattern lab header
+*/
+.ua-logo {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+}
+
+@media all and (min-width: 42em) {
+  .ua-logo {
+    margin-top: 0;
+    margin-bottom: -1em;
+  }
+}
 /*------------------------------------*\
 #NAVIGATION
 \*------------------------------------*/
@@ -202,7 +222,6 @@
   }
   .sg-nav > li > ol {
     position: absolute;
-    top: 2em;
     left: 0;
   }
 }
@@ -624,7 +643,7 @@
   text-align: center;
   width: 100%;
   position: fixed;
-  top: 2em;
+  top: 4.813em;
   bottom: 0;
   left: 0;
   right: 0;
@@ -657,6 +676,7 @@
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: #fff;
 }
 #sg-gen-container.hay-mode {
   -webkit-transition: all 40s linear;
@@ -769,7 +789,7 @@
 * Pattern Title
 */
 .sg-pattern-title {
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-size: 0.85rem !important;
   line-height: 1 !important;
   font-weight: bold !important;
@@ -869,16 +889,13 @@
 @media all and (min-width: 42em) {
   .sg-pattern-extra-inner {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
     width: 100%;
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
   }
@@ -931,18 +948,15 @@
 */
 .sg-pattern-extra-code {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 90%;
   padding: 0.5rem;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   /**
@@ -956,7 +970,6 @@
   margin: 0 !important;
   line-height: 1 !important;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   border-radius: 0 6px 6px 6px !important;
@@ -986,8 +999,7 @@
 * 2) The category contains a title and optional description
 */
 .sg-pattern-category {
-  margin-top: 6rem;
-  font: "HelveticaNeue", "Helvetica", "Arial", sans-serif !important;
+  font: "Roboto", sans-serif !important;
 }
 .sg-pattern-category:first-of-type {
   margin-top: 2rem;
@@ -1035,20 +1047,17 @@
 \*------------------------------------*/
 .sg-tabs {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   width: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  font: "HelveticaNeue", "Helvetica", "Arial", sans-serif !important;
+  font: "Roboto", sans-serif !important;
 }
 
 .sg-tabs-list {
@@ -1098,16 +1107,13 @@
 
 .sg-tabs-content {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid #ccc;
@@ -1118,16 +1124,13 @@
 .sg-tabs-panel {
   display: none;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   position: relative;
@@ -1147,7 +1150,7 @@
 * on the pattern detail screen.
 */
 .sg-modal {
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.4;
   font-size: 90%;
   background: #000;
@@ -1160,12 +1163,10 @@
   width: 100%;
   height: 50%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   /**
@@ -1211,7 +1212,6 @@
 }
 .sg-modal .sg-pattern-extra {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   max-height: none;
@@ -1272,16 +1272,13 @@
 */
 .sg-modal-content {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: auto;
@@ -1293,16 +1290,13 @@
 */
 .sg-modal-content-inner {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -1380,15 +1374,12 @@
   counter-increment: the-count;
   font-size: 85%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 14px;
